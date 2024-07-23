@@ -18,13 +18,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body className="h-full min-h-screen w-full">
-        <LayoutRoot>
-          <Header />
-          <main className="flex w-full flex-1 flex-col">{children}</main>
-          <Footer />
+  
+  <body className="h-full min-h-screen w-full">
+                  <LayoutRoot>
+          
+          
+                                    <Header />
+
+
+          <main className="flex w-full flex-1 flex-col">
+            
+            
+              {children}
+              
+        </main>
+<Footer />
+
         </LayoutRoot>
-      </body>
+
+                              </body>
     </html>
   );
 }
